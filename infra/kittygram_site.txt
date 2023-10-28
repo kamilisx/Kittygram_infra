@@ -1,0 +1,5 @@
+IP: 158.160.28.92;
+name_taski: https://2dolist.ddns.net/;
+name_kittygram: https://kittengrm.ddns.net/;
+login: yc-user;
+password: admin;
