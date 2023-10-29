@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = False
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").split(",")
 
@@ -94,6 +94,7 @@ USE_TZ = True
 
 
 STATIC_URL = 'static_backend'
+
 STATIC_ROOT = BASE_DIR / 'static_backend'
 
 MEDIA_URL = '/media/'
