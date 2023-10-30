@@ -6,33 +6,17 @@ Kittygram — социальная сеть для обмена фотограф
 
 ---
 
-# Запуск проекта на виртуальном сервере из репозитория GitHub:
-Клонируем проект из репозитория на GitHub:
-
+# Запуск проекта на виртуальном сервере из репозитория GitHub
+## Клонирование проекта с GitHub на сервер
 	git clone https://github.com/kamilisx/infra_sprint1
-
-# Backend-приложение:
-
-Создаем и активируем виртуальное окружение
-
-Устанавливаем необходимые зависимости:
-	
- 	pip install -r requirements.txt
-В settings.py отключаем режим debug: 
-	
- 	DEBUG = False
  
-# Frontend-приложение:
+# Backend-приложение:
+Создаем и активируем виртуальное окружение, устанавливаем зависимости
 
-Для запуска сборки frontend-приложения выполняем команды: 
+ 	python3 -m venv venv
+	source venv/bin/activate
+ 	pip install -r requirements.txt
 
-	npm i
- 	npm run build
-
-# Перезапуск gunicorn  и Nginx:
-
-	sudo systemctl daemon-reload
-	sudo systemctl reload nginx
 
 #Технологии:
 
