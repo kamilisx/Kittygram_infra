@@ -1,6 +1,6 @@
  server {
     server_name 158.160.28.92 2dolist.ddns.net;
-
+    server_tokens off;
     location /api/ {
         proxy_pass http://127.0.0.1:8000;
     }
@@ -40,8 +40,8 @@
 }
 
  server {
-    server_name kittengrm.ddns.net
-;
+    server_name kittengrm.ddns.net;
+    server_tokens off;
     location /api/ {
         proxy_pass http://127.0.0.1:8080;
     }
